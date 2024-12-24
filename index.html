@@ -707,6 +707,11 @@ tab {
             selectedOptions = Array.from(reviewOptionsContainer.children).map(item => item.childNodes[0].textContent.trim());
         }
 
+	function goBack() {
+    document.getElementById('optionsSection').classList.remove('hidden');
+    document.getElementById('reviewSection').classList.add('hidden');
+}
+
         // Add an event listener to the form submission
         document.getElementById('optionsForm').addEventListener('submit', (event) => {
             event.preventDefault(); // Prevent default form submission
